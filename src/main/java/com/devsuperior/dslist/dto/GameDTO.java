@@ -5,7 +5,6 @@ import org.springframework.beans.BeanUtils;
 
 public class GameDTO {
 
-
     private Long id;
     private String title;
     private Integer year;
@@ -16,7 +15,8 @@ public class GameDTO {
     private String shortDescription;
     private String longDescription;
 
-    public GameDTO(){}
+    public GameDTO() {
+    }
 
     public GameDTO(Game entity) {
         BeanUtils.copyProperties(entity, this);
